@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Example</title>
+  <style>
+    #counter {
+      font-size: 48px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Counter: <span id="counter">0</span></h1>
+
+  <button onclick="incrementCounter()">Increment</button>
+<button onclick="decrementCounter()">Decrement</button>
+<button onclick="resetCounter()">Reset</button>
+
+<script>
+  function incrementCounter() {
+    count++;
+    document.getElementById('counter').textContent = count;
+  }
+
+  function decrementCounter() {
+    count--;
+    document.getElementById('counter').textContent = count;
+  }
+
+  function resetCounter() {
+    count = 0;
+    document.getElementById('counter').textContent = count;
+  }
+</script>
+
+  
+</body>
+</html>

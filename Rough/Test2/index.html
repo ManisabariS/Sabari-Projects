@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Modify Object</title>
+</head>
+<body>
+    <button id="createObjectButton">Create Object</button>
+    <button id="setPropertyButton">Set Property and Value</button>
+    <button id="addObjectToContainer">Add Object to container</button>
+
+    <script>
+        // Declare myObject in the outer scope
+        let myObject = null;
+        let _container = {};
+        let noOfObjects =0;
+        // Button to create an empty object
+        document.getElementById('createObjectButton').addEventListener('click', function() {
+            myObject = {}; // Create the empty object
+            console.log("Empty object created:", myObject);
+        });
+
+        // Button to set property and value
+        document.getElementById('setPropertyButton').addEventListener('click', function() {
+            setPropertyAndValue(); // Call function to set property and value
+        });
+
+        // Function to set property and value with validation
+        function setPropertyAndValue() {
+            if (myObject === null) {
+                alert("Object has not been created yet. Please click the 'Create Object' button first.");
+                return;
+            }
+
+            let property = "";
+            let value = "";
+
+            // Keep prompting the user until a non-empty property and value are entered
+            while (!property.trim()) {
+                property = prompt("Enter the property name (cannot be empty):");
+                property = property.toLowerCase()
+                if (!property.trim()) {
+                    alert("Property name cannot be empty. Please enter a valid property name.");
+                }
+            }
+
+            while (!value.trim()) {
+                value = prompt("Enter the property value (cannot be empty):");
+                value = value.toLowerCase()
+                if (!value.trim()) {
+                    alert("Property value cannot be empty. Please enter a valid property value.");
+                }
+            }
+            
+            // Add the property and value to the object
+            myObject[property] = value;
+            console.log("Updated object:", myObject);
+        }
+        document.getElementById('addObjectToContainer').addEventListener('click',function(){
+            //const uniqueKey = 'object_' + Date.now();
+            const uniqueKey = myObject['name'];
+            _container[uniqueKey] = {...myObject}
+            console.log("Updated COntainer:", _container);
+        });
+
+        function add(x, y) {
+  if (new.target) {
+    throw 'The add function cannot be called as a constructor';
+  }
+  return x + y;
+}
+
+let obj = new add(10, 20);
+console.log(obj);
+    </script>
+</body>
+</html>
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Store Object in Container</title>
+ </head>
+ <body>
+     <button id="createObjectButton">Create Object</button>
+     <button id="setPropertyButton">Set Property and Value</button>
+     <button id="storeObjectButton">Store Object in Container</button>
+ 
+     <script>
+         // Declare the global myObject and container
+         let myObject = null;
+         const container = {}; // This will store objects by unique keys
+ 
+         // Button to create an empty object
+         document.getElementById('createObjectButton').addEventListener('click', function() {
+             myObject = {}; // Create the empty object
+             console.log("Empty object created:", myObject);
+         });
+ 
+         // Button to set property and value
+         document.getElementById('setPropertyButton').addEventListener('click', function() {
+             setPropertyAndValue(); // Call function to set property and value
+         });
+ 
+         // Button to store the object in container
+         document.getElementById('storeObjectButton').addEventListener('click', function() {
+             storeObjectInContainer(); // Store myObject in container
+         });
+ 
+         // Function to set property and value with validation
+         function setPropertyAndValue() {
+             if (myObject === null) {
+                 alert("Object has not been created yet. Please click the 'Create Object' button first.");
+                 return;
+             }
+ 
+             let property = "";
+             let value = "";
+ 
+             // Keep prompting the user until a non-empty property and value are entered
+             while (!property.trim()) {
+                 property = prompt("Enter the property name (cannot be empty):");
+                 if (!property.trim()) {
+                     alert("Property name cannot be empty. Please enter a valid property name.");
+                 }
+             }
+ 
+             while (!value.trim()) {
+                 value = prompt("Enter the property value (cannot be empty):");
+                 if (!value.trim()) {
+                     alert("Property value cannot be empty. Please enter a valid property value.");
+                 }
+             }
+             
+             // Add the property and value to the object
+             myObject[property] = value;
+             console.log("Updated object:", myObject);
+         }
+ 
+         // Function to store myObject in container
+         function storeObjectInContainer() {
+             if (myObject === null) {
+                 alert("Object has not been created yet. Please click the 'Create Object' button first.");
+                 return;
+             }
+ 
+             // Generate a unique key for the object, e.g., using the current timestamp
+             const uniqueKey = 'object_' + Date.now();
+ 
+             // Store the current myObject in the container under the unique key
+             container[uniqueKey] = { ...myObject }; // Spread operator to create a copy
+ 
+             console.log("Object stored in container under key:", uniqueKey);
+             console.log("Container now contains:", container);
+ 
+             // Optionally reset myObject after storing
+             myObject = null;
+         }
+     </script>
+ </body>
+ </html> -->
+ 

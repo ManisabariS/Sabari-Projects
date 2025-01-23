@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDemo</title>
+</head>
+<body>
+    <form action="signuppage.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="username">User Name : </label>
+            <input type="text"  name="username" id="username" >
+        </div>
+       
+        <div>    
+            <label for="password">Password : </label>
+            <input type="password" minlength="4" maxlength="8" name="password" id="password">
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="phone">Phone : </label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="age">Age  : </label>
+            <input type="number" name="age" id="age" min="01" max="100" step="00">
+        </div>
+        <div>
+            <label for="dob">Date of birth : </label>
+            <input type="date" name="dob" id="dob" min="1900-01-01" max="2100-01-01">
+        </div>
+        <div>
+            <label for="time">Time : </label>
+            <input type="time" name="time" id="time">
+        </div>
+        
+        <div>
+            <label for="search">Search : </label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="city">State : </label>
+            <select name="city" id="city" multiple>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+            
+        </div>
+        <div>
+            <label for="">Gender : </label>
+            <br>
+            <div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+        </div>
+        <div>
+            <label for="skincolor">Skin color</label>
+            <input type="color" name="skincolor" id="skincolor">
+        </div>
+        <br>
+        <div>
+            <label for="resume">Resume : </label>
+            <input type="file" name="resume" id="resume">
+        </div>
+        <br>
+        <div>
+            <label for="about">About</label>
+            <br>
+            <textarea name="about" id="about" cols="50" rows="5"></textarea>
+        </div>
+            
+        <!-- ------------------------------------------------------- -->
+       
+        <br>
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">i agree all terms and conditions</label>
+        </div>
+        <br>
+        <div>
+            <!-- <button type="submit">Sign up</button> -->
+            <input type="image" src="submit button.png" width="150" name="" id="">
+            <!-- <button type="reset">Reset</button> -->
+            <input type="image" src="reset button.jpg" width="100" name="" id="">
+        </div>
+        
+        
+    </form>
+</body>
+</html>

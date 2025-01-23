@@ -1,0 +1,45 @@
+n<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class PowerRangers
+        {
+            static counter = 0;
+            constructor(argName)
+            {
+                PowerRangers.counter++;
+                this.clsName = "Hello, "+argName;
+            }
+            //outside of constructor we cannot access its argument and also we cannot access class properties without 'this' key word but it is accessible within class so no need to pass class properties as its parameter to the function or methods
+            displayName() 
+            {
+                //console.log(this.clsName)
+                return this.clsName;
+            }
+            static getNumberOfObjects(){
+                return PowerRangers.counter;
+            }
+            strength()
+            {
+                return this.constructor.getNumberOfObjects();
+            }
+
+        }
+
+        let redRanger = new PowerRangers ('Red Ranger...')
+        let res1 = redRanger.displayName()
+        let blueRanger = new PowerRangers ('Blue Ranger...')
+        let res2 = blueRanger.displayName()
+        console.log(res1,res2);
+        console.log(PowerRangers.getNumberOfObjects());
+        console.log(redRanger.strength());
+
+
+    </script>
+</body>
+</html>
