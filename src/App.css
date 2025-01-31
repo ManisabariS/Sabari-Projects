@@ -74,4 +74,9 @@ body, html {
   padding: 0 required;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+.time-component{
+  position: absolute;
+  right: 180px;
+}
+
 

@@ -39,4 +39,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  
+  .time{
+    right: 10px;
+    position: absolute;
+  }

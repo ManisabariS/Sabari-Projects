@@ -1,5 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import './css/NavBar.css'
+//import TimeComponent from "./TimeComponent";
+ 
 function NavBar() {
   const navigate = useNavigate();
   return (
@@ -13,7 +15,9 @@ function NavBar() {
         <li><NavLink to="/services">Services</NavLink></li>
         <li><NavLink to="/users">Users</NavLink></li>
       </ul>
-      <button onClick={()=>{navigate('/login',{replace:true})}}>Login</button>
+      <button   onClick={()=>{navigate('/login',{replace:true})}}>Login</button>
+      {/* <div  className="time-component"><TimeComponent/></div> */}
+      
     </div>
   );
 }

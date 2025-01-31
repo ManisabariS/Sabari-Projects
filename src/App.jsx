@@ -19,10 +19,12 @@ import { ProductsLoader, UsersLoader } from "./utils/ProductsLoader";
 import Product from "./pages/Product";
 import Users from "./pages/Users";
 import Payment from "./pages/Payment";
+ 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
+        
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         {/* <Route path='products' element={<Products/>} loader={ProductsLoader}>
