@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3e50; /* Background color */
+  background-color: #164A41; /* Background color */
   color: #ecf0f1; /* Text color */
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for better visibility */
@@ -26,7 +26,7 @@
 
 .nav-bar ul li {
   margin: 0px 20px;
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   color: #ecf0f1; /* Light Gray Text */
   font-weight: bold;
   cursor: pointer;
@@ -62,15 +62,16 @@
   transform: scale(1.05); /* Slight Zoom on Hover */
 }
 
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #ecf0f1; /* Light Gray Background */
-  color: #2c3e50; /* Text Color */
-  margin-top:30px ;
-}
+
 .nav-bar h3 {
   color: white;
   margin: 0px;
   
 }
+
+body, html {
+  margin: 0 required;
+  padding: 0 required;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+

@@ -17,3 +17,7 @@
   font-weight: bold;
   cursor: pointer;
 }
+body{
+  margin: 0;
+  padding: 0;
+}
