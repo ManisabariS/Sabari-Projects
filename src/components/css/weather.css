@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: Merriweather;
+}
+.weather-container-div{
+    background-color: #e7e7e7;
+    width: 500px;
+    margin: 20px 150px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.center-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-div {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.search-div input{
+    width: 80%;
+    padding: 10px 20px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.search-div .search-icon{
+     
+    position: absolute;
+    top: 8px;
+    left: 96%;
+}
+.search-div .clear-icon{
+     
+    position: absolute;
+    top: 8px;
+    left: 85%;
+}
+
+.display-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.display-div img{
+    width: 30%;
+    height: 30%;
+
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+tbody{
+    margin-top: 0px 20px;
+     
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 20px;
+    
+}
+.left-icon {
+    text-align: left;
+    padding: 5px 20px;
+}
+
+.right-icon {
+    text-align: right;
+    padding: 5px 20px;
+     
+}
+.bottom-div{
+    width: 100%;
+}
+.long-lat{
+    margin: 0px 20px;
+}

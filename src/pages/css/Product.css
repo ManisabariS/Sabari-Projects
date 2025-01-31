@@ -1,0 +1,54 @@
+.product-detail {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-detail-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  /* Button Container */
+.button-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Common Button Styles */
+.button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Buy Now Button */
+.buy-now {
+  background-color: #10b981;
+  color: white;
+}
+
+.buy-now:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}

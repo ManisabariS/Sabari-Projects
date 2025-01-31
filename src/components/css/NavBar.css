@@ -1,0 +1,19 @@
+.active{
+    padding: 8px 10px; 
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #1abc9c; /* Teal Button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+    /* margin-right: 50px; */
+}
+.inactive{
+    margin: 0px 20px;
+  padding: 5px 15px;
+  color: #ecf0f1; /* Light Gray Text */
+  font-weight: bold;
+  cursor: pointer;
+}
