@@ -19,6 +19,8 @@ import { ProductsLoader, UsersLoader } from "./utils/ProductsLoader";
 import Product from "./pages/Product";
 import Users from "./pages/Users";
 import Payment from "./pages/Payment";
+// import CurrencyConverter from "./components/CurrencyConverter";
+import Weather from "./components/Weather";
  
 function App() {
   const router = createBrowserRouter(
@@ -41,6 +43,7 @@ function App() {
           <Route path="form" element={<ContactForm />} />
         </Route>
         <Route path="services" element={<Services />} />
+        <Route path="services/weather" element={<Weather />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
 

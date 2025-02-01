@@ -95,6 +95,7 @@ function Weather() {
 
   const clearInput = () => {
     setSearchCityState("");
+    setShowSearchBtn(!showSearchBtn)
   };
 
   function fetchApi() {
@@ -123,27 +124,7 @@ function Weather() {
   return (
     <>
       <div className="weather-container-div">
-        <div className="search-div">
-          <span>
-            <input
-              type="text"
-              placeholder="Enter city name"
-              value={searchCityState}
-              onChange={updateCityName}
-              onKeyDown={handlePressEnter}
-            />
-          </span>
-          <span className="clear-icon" onClick={clearInput}>
-            <img src={clearIcon} alt="Clear" height="24px" width="24px" />
-          </span>
-          <span className="search-icon">
-            <a href="" onClick={changeCityInApi}>
-              {showSearchBtn && (
-                <img src={searchIcon} alt="Search" height="24px" width="24px" />
-              )}
-            </a>
-          </span>
-        </div>
+     
 
         <div className="display-div">
           <div>

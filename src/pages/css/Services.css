@@ -1,0 +1,8 @@
+.btn-container-main{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.btn-container-main  button{
+    padding: 10px 20px;
+}

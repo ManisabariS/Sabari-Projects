@@ -1,35 +1,45 @@
-import { useState } from "react";
-
-import Weather from "../components/Weather";
-
-
+// import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+// import Weather from "../components/Weather";
+// import CurrencyConverter from "../components/CurrencyConverter";
+import './css/Services.css'
 function Services() {
-  const [showWeatherCmp,setShowWeatherCmp] = useState(false)
-    return (
-      <>
-        <button onClick={()=>{setShowWeatherCmp(!showWeatherCmp)}}>Weather</button>
-        {showWeatherCmp && <Weather/>}
-        <div style={{ padding: "20px" }}>
-        <h1>Our Services</h1>
-        <ul>
-          <li>
-            <h2>Service A</h2>
-            <p>Comprehensive support for your business needs.</p>
-          </li>
-          <li>
-            <h2>Service B</h2>
-            <p>Expert consulting services to help you succeed.</p>
-          </li>
-          <li>
-            <h2>Service C</h2>
-            <p>Affordable and reliable solutions for all.</p>
-          </li>
-        </ul>
+  const navigate = useNavigate();
+  return (
+    <>
+      <h1>Our Services</h1>
+
+      <div className="btn-container-main">
+        <div>
+          <button
+            onClick={() => {
+              navigate("weather");
+            }}
+          >
+            Weather
+          </button>
         </div>
-      </>
-      
-    );
-  }
-  
-  export default Services;
-  
+        <div>
+          <button
+            onClick={() => {
+              navigate("bmi");
+            }}
+          >
+            BMI Calc
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={() => {
+              navigate("currencyconverter");
+            }}
+          >
+            Converter
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Services;
