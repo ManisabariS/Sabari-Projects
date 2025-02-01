@@ -1,0 +1,82 @@
+.nav-bar {
+  position: fixed; /* Makes the navbar fixed at the top */
+  top: 0; /* Aligns the navbar to the top */
+  left: 0; /* Aligns the navbar to the left */
+  width: 100%; /* Makes the navbar stretch across the screen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #164A41; /* Background color */
+  color: #ecf0f1; /* Text color */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for better visibility */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  margin: 0px 20px;
+  /* padding: 5px 15px; */
+  color: #ecf0f1; /* Light Gray Text */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ecf0f1; /* Link Color */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-bar ul li:hover {
+  background-color: #34495e; /* Slightly Lighter Blue */
+  color: #1abc9c; /* Teal on Hover */
+  border-radius: 5px;
+}
+
+.nav-bar button {
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #1abc9c; /* Teal Button */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 50px;
+}
+
+.nav-bar button:hover {
+  background-color: #16a085; /* Darker Teal */
+  transform: scale(1.05); /* Slight Zoom on Hover */
+}
+
+
+.nav-bar h3 {
+  color: white;
+  margin: 0px;
+  
+}
+
+body, html {
+  margin: 0 required;
+  padding: 0 required;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+.time-component{
+  position: absolute;
+  right: 180px;
+}
+
+

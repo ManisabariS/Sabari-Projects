@@ -1,0 +1,45 @@
+/* Home.css */
+
+  .home-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+
+    
+  }
+  .home-container {
+    margin: 0 required;
+    padding: 0 required;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .time{
+    right: 10px;
+    position: absolute;
+  }

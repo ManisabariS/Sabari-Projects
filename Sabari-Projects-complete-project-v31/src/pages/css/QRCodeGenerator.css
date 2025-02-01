@@ -1,0 +1,28 @@
+/* src/css/QRCodeGenerator.css */
+.qr-code-generator {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .qr-code-generator input {
+    margin: 10px;
+    padding: 8px;
+    width: 80%;
+  }
+  
+  .qr-code-generator button {
+    margin: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .qr-code-generator h2 {
+    margin-bottom: 20px;
+  }
+  
+  .qr-code-generator h3 {
+    margin-top: 20px;
+  }
+  
