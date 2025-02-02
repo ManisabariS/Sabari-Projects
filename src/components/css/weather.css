@@ -1,3 +1,10 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .weather-container-div {
     background-color: #e7e7e7;
     width: 500px;
@@ -135,4 +142,7 @@ button:hover {
 .clear-icon{
  margin-left: 10px;
  margin-right: 30px;
+}
+.back-btn-div button{
+    padding: 10px 20px;
 }
