@@ -4,8 +4,10 @@ import NavBar from "../components/NavBar";
 function RootLayout() {
   return (
     <>
-      <NavBar />
-      <Outlet />
+      <div className="nav-page-container">
+        <NavBar />
+        <Outlet />
+      </div>
     </>
   );
 }

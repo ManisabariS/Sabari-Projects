@@ -43,11 +43,14 @@ function CurrencyConverter() {
 
   return (
     <>
+      <div className="center">
       <div>
-        <div className="container">
-          <button className="back-btn" onClick={() => navigate("/services")}>
-            ⬅ Back
+      <button style={{padding:'10px 20px'}} className="back-btn" onClick={() => navigate("/services")}>
+             Back
           </button>
+      </div>
+        <div className="container">
+          
 
           <div className="converter-box">
             <h2>Currency Converter</h2>
@@ -88,7 +91,12 @@ function CurrencyConverter() {
                 ))}
               </select>
             </div>
-
+            <div className="info">
+              <h3>1 {fromCurrency} is equal to {exchangeRates[toCurrency]}{toCurrency}</h3>
+            </div>
+            <div className="footer">
+            <footer>Developed by DevLogics</footer>
+          </div>    
             {loading && (
               <p className="loading-text">Fetching exchange rates...</p>
             )}

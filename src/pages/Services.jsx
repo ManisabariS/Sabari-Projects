@@ -37,6 +37,15 @@ function Services() {
             Converter
           </button>
         </div>
+        <div>
+          <button
+            onClick={() => {
+              navigate("digitalClock");
+            }}
+          >
+            Clock
+          </button>
+        </div>
       </div>
     </>
   );

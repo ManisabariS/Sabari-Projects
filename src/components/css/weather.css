@@ -3,7 +3,13 @@
     justify-content: center;
     align-items: center;
 }
-
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes default margin */
+  }
 
 .weather-container-div {
     background-color: #e7e7e7;

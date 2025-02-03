@@ -5,8 +5,8 @@ import './css/NavBar.css'
 function NavBar() {
   const navigate = useNavigate();
   return (
-    <div className="nav-bar">
-      <h2>DevLogics</h2>
+    <div style={{marginBottom:'50px'}} className="nav-bar">
+      <h2 style={{color:'red',fontSize:'2rem'}}>DevLogics</h2>
       <ul>
         <li><NavLink to="/" className={({isActive})=>isActive?"active":"inactive"}>Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>

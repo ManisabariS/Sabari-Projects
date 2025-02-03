@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+  .bmi-container {
+    /* background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; */
+    background-color: #e7e7e7;
+    width: 500px;
+    margin: 10px 75px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bmi-heading h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .bmi-inputs {
+    margin-bottom: 10px;
+  }
+  
+  .bmi-inputs label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .bmi-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .bmi-inputs input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .bmi-result {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .bmi-result p {
+    font-weight: bold;
+  }
+  
+  .bmi-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bmi-btn button:hover {
+    background-color: #45a049;
+  }
+  
+  .bmi-details {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .bmi-details span {
+    color: red;
+    font-weight: bold;
+  }
+  .go-back button{
+    padding: 10px 20px;
+}
+
+.back-btn:hover {
+  background: #217dbb;
+}
+.footer {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #aaa;
+}

@@ -22,6 +22,7 @@ import Payment from "./pages/Payment";
 import CurrencyConverter from "./components/CurrencyConverter";
 import Weather from "./components/Weather";
 import Bmi from "./components/Bmi";
+import DigitalClock from "./components/DigitalClock";
  
 function App() {
   const router = createBrowserRouter(
@@ -47,6 +48,7 @@ function App() {
         <Route path="services/weather" element={<Weather />} />
         <Route path="services/bmi" element={<Bmi />} />
         <Route path="services/currencyConverter" element={<CurrencyConverter />} />
+        <Route path="services/digitalClock" element={<DigitalClock />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
 
