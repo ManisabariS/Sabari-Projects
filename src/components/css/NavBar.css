@@ -1,23 +1,95 @@
-.active{
-    padding: 8px 10px; 
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: #1abc9c; /* Teal Button */
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.1s ease, transform 0.1s ease;
-    /* margin-right: 50px; */
-}
-.inactive{
-    margin: 0px 20px;
-  padding: 5px 15px;
-  color: #ecf0f1; /* Light Gray Text */
-  font-weight: bold;
-  cursor: pointer;
-}
-body{
+/* General Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Navbar container */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right,#2c3e50, #2a5298); 
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.nav-bar h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+/* Navigation Links */
+.nav-bar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Active Link */
+.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+/* Inactive Link */
+.inactive {
+  color: #ecf0f1;
+}
+
+/* Hover Effect */
+.nav-bar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Login Button */
+.nav-bar button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-bar button:hover {
+  background-color: #e68900;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-bar button {
+    margin-top: 10px;
+  }
 }

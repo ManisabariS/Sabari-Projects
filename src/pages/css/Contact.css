@@ -1,18 +1,56 @@
-button{
-    
-        padding: 8px 20px;
-        outline: none;
-        border: none;
-        border-radius: 10px;
-        background-color: #1abc9c; /* Teal Button */
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        margin-right: 20px;
-        margin-left: 10px;
-      
+/* Center container */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Full screen height */
+  width: 100%;
 }
-button:hover{
-        background-color: #074136; 
+
+.container {
+  display: flex;
+  flex-direction: column; /* Ensures proper layout */
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  /* Full height */
+  width: 100%; /* Ensures full width for centering */
+  text-align: center;
+  height: 300px;
+  border: none;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  gap: 15px; /* Spacing between buttons */
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #1abc9c; /* Teal Button */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #074136;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    gap: 10px;
+  }
 }

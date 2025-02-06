@@ -1,5 +1,5 @@
-import   { useState } from "react";
-import "./css/UserDetailsForm.css"; // Import custom CSS
+import { useState } from "react";
+import "./css/UserDetailsForm.css";
 
 const UserDetailsForm = () => {
   const [userDetails, setUserDetails] = useState({
@@ -20,6 +20,7 @@ const UserDetailsForm = () => {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,7 +46,34 @@ const UserDetailsForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Simple Validation
+    if (!userDetails.name || !userDetails.email) {
+      setError("Name and Email are required fields.");
+      return;
+    }
+
+    // Set submitted flag first, then reset the form state
     setIsSubmitted(true);
+    setError("");
+
+    // Clear form data after showing the card
+    setUserDetails({
+      id: "",
+      name: "",
+      username: "",
+      email: "",
+      address: {
+        street: "",
+        suite: "",
+        city: "",
+        zipcode: "",
+        geo: {
+          lat: "",
+          lng: "",
+        },
+      },
+    });
   };
 
   return (
@@ -60,6 +88,8 @@ const UserDetailsForm = () => {
           <p>Suite: {userDetails.address.suite || "No Suite"}</p>
           <p>City: {userDetails.address.city || "No City"}</p>
           <p>Zipcode: {userDetails.address.zipcode || "No Zipcode"}</p>
+          <p>Latitude: {userDetails.address.geo.lat || "No Latitude"}</p>
+          <p>Longitude: {userDetails.address.geo.lng || "No Longitude"}</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
@@ -153,6 +183,7 @@ const UserDetailsForm = () => {
               onChange={handleChange}
             />
           </div>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
           <button type="submit" className="submit-btn">
             Submit
           </button>

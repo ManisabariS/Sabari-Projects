@@ -36,6 +36,7 @@ function ContactForm() {
             onChange={handleChange}
             placeholder="Enter your name"
             required
+            style={{width: '80%'}}
           />
         </div>
         <div className="form-group">
@@ -48,6 +49,7 @@ function ContactForm() {
             onChange={handleChange}
             placeholder="Enter your email"
             required
+            style={{width: '80%'}}
           />
         </div>
         <div className="form-group">
@@ -60,6 +62,7 @@ function ContactForm() {
             placeholder="Write your message here"
             rows="5"
             required
+            style={{width: '80%'}}
           ></textarea>
         </div>
         <button type="submit" className="submit-btn">

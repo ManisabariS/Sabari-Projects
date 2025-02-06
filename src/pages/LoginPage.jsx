@@ -23,6 +23,7 @@ function LoginPage() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
             required
+            style={{width: '80%'}}
           />
         </div>
 
@@ -35,6 +36,7 @@ function LoginPage() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
             required
+            style={{width: '80%'}}
           />
         </div>
 

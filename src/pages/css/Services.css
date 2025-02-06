@@ -1,8 +1,46 @@
-.btn-container-main{
+/* Main container */
+.services-container {
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-.btn-container-main  button{
-    padding: 10px 20px;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+  }
+  
+  /* Button container */
+  .btn-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
+    gap: 15px; /* Space between buttons */
+    padding: 20px;
+  }
+  
+  /* Button styling */
+  .btn-container-main button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db; /* Blue color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect */
+  .btn-container-main button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 600px) {
+    .btn-container-main {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+  }
+  

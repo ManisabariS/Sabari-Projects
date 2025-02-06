@@ -1,0 +1,158 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+  }
+  .name{
+    color: #f1c40f;
+  }
+  
+  /* About Header Section */
+  .about-header {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Mission and Vision */
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .mission, .vision {
+    background-color: #f1c40f;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  .mission h2, .vision h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Our Values */
+  .our-values {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .our-values ul {
+    list-style-type: none;
+  }
+  
+  .our-values li {
+    background-color: #16a085;
+    color: white;
+    padding: 10px;
+    margin: auto auto;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  /* Team Section */
+  .team {
+    margin-top: 50px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+  }
+  
+  .team-member p {
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    margin-top: 60px;
+    background-color: #f39c12;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form button {
+    padding: 15px 25px; /* Adjusted button padding */
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: auto; /* Removed full width */
+    margin-top: 20px; /* Added space between the fields and the button */
+  }
+  
+  .contact-form button:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .team-members {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  

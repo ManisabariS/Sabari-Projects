@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Weather() {
-  const dummy=false
+  const dummy = false
   const navigate = useNavigate();
   const [apiData, setApiData] = useState({});
   const [tempState, setTempState] = useState(0);
@@ -40,7 +40,7 @@ function Weather() {
 
   useEffect(() => {
     fetchApi();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urlState]);
 
   const getWeatherImage = (main) => {
@@ -136,7 +136,7 @@ function Weather() {
           <button onClick={() => navigate("/services")}>Back</button>
         </div>
         <div className="weather-container-div">
-          {dummy&&<div>{apiData}</div>}
+          {dummy && <div>{apiData}</div>}
           <div className="input-main-container">
             <div className="input-box">
               <input

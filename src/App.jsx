@@ -19,10 +19,12 @@ import { ProductsLoader, UsersLoader } from "./utils/ProductsLoader";
 import Product from "./pages/Product";
 import Users from "./pages/Users";
 import Payment from "./pages/Payment";
-import CurrencyConverter from "./components/CurrencyConverter";
+import CurrencyConverter from "./components/CurrencyConverter";                 
+import FAQ from "./components/FAQ";                 
 import Weather from "./components/Weather";
 import Bmi from "./components/Bmi";
 import DigitalClock from "./components/DigitalClock";
+import PasswordGenerator from "./components/PasswordGenerator";
  
 function App() {
   const router = createBrowserRouter(
@@ -49,10 +51,12 @@ function App() {
         <Route path="services/bmi" element={<Bmi />} />
         <Route path="services/currencyConverter" element={<CurrencyConverter />} />
         <Route path="services/digitalClock" element={<DigitalClock />} />
+        <Route path="services/password-generator" element={<PasswordGenerator />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
 
         <Route path="users" element={<Users/> } loader={UsersLoader}/>
+        <Route path="faq" element={<FAQ/> } />
       </Route>
     )
   );
