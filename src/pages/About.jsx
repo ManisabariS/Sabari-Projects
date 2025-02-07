@@ -13,13 +13,7 @@ function About() {
           <h2>Our Mission</h2>
           <p>To make high-quality services and products accessible to everyone, improving lives through innovation.</p>
         </div>
-        <div className="vision">
-          <h2>Our Vision</h2>
-          <p>To become a global leader in innovation and customer satisfaction, leading the way for sustainable growth.</p>
-        </div>
-      </section>
-
-      <section className="our-values">
+        <div className="mission">
         <h2>Our Values</h2>
         <ul>
           <li>Integrity</li>
@@ -27,6 +21,15 @@ function About() {
           <li>Customer Focus</li>
           <li>Excellence</li>
         </ul>
+        </div>
+        <div className="vision">
+          <h2>Our Vision</h2>
+          <p>To become a global leader in innovation and customer satisfaction, leading the way for sustainable growth.</p>
+        </div>
+      </section>
+
+      <section className="our-values">
+       
       </section>
 
       <section className="team">

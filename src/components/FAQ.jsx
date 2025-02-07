@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './css/FAQ.css';
+import { useNavigate } from 'react-router-dom';
 
 function FAQ() {
+    const navigate = useNavigate()
     const faqData = [
         {
             question: "What is DevLogics?",
@@ -29,6 +31,9 @@ function FAQ() {
     return (
          
             <div className="faq-main">
+                <div className="back-btn-div">
+            <button onClick={() => navigate("/services")}>Back</button>
+             </div>
                 <div className="faq-container">
                     <div className="faq-heading">
                         <h1>Frequently Asked Questions</h1>

@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <nav className="nav-bar">
-      <h2>DevLogics</h2>
+      <div style={{textAlign:'center'}} className="company-name-div"><h2 style={{fontSize:'2.8rem'}} className="company-name">DevLogics</h2></div>
       <ul>
         <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : "inactive"}>Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
@@ -15,7 +15,19 @@ function NavBar() {
         <li><NavLink to="/services">Services</NavLink></li>
         <li><NavLink to="/users">Users</NavLink></li>
       </ul>
-      <button onClick={() => navigate('/login', { replace: true })}>Login</button>
+      <div>
+      <button 
+      className="signup-btn" 
+      style={{backgroundColor:'#ff9800'}}
+      onClick={() => navigate('/login', { replace: true })}>Login</button>
+      {/* Sign Up Button */}
+      <button 
+        className="signup-btn" 
+        onClick={() => navigate('/signup', { replace: true })}
+      >
+        Sign Up
+      </button>
+      </div>
     </nav>
   );
 }

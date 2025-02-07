@@ -29,8 +29,8 @@
 }
 
 /* Button styling */
-button {
-  padding: 10px 20px;
+.button-group button {
+  padding: 10px 30px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -42,7 +42,7 @@ button {
 }
 
 /* Button hover effect */
-button:hover {
+.button-group button:hover {
   background-color: #074136;
   transform: scale(1.05);
 }

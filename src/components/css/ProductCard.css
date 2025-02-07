@@ -4,7 +4,7 @@
   flex-wrap: wrap; /* Ensures cards wrap to the next row */
   justify-content: center; /* Centers cards in row */
   gap: 20px; /* Spacing between cards */
-  padding: 20px;
+ 
 }
 
 /* Individual product card */

@@ -2,18 +2,20 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden; /* Prevents scrolling */
   font-family: Arial, sans-serif;
   display: block !important;
+  height: 100vh;
 }
 
-/* Centered Home Container */
-.home-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.home-main {
+  width: 100%;
   height: 100vh;
-  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background: linear-gradient(to right, #824bbc, #71a5ff);
   background-size: cover;
   background-position: center;
@@ -21,24 +23,34 @@ body, html {
   text-align: center;
 }
 
-/* Home Content Box */
-.home-content {
-  background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 60%;
+/* Time Component - Positioned at the Top-Left */
+.time-component {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-/* Title and Description */
+/* Centered Home Container */
+.home-container {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.2); /* Slight transparency */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .home-title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .home-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -48,8 +60,8 @@ body, html {
   background-color: #ff9800;
   border: none;
   color: white;
-  padding: 12px 24px;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -59,20 +71,24 @@ body, html {
   background-color: #e68900;
 }
 
-/* Time Component Position */
-.time-component {
+/* Calendar Component - Positioned at the Bottom-Right */
+.calender-container {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.2rem;
-  color: white;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
-/* FAQ Button Positioning */
+/* FAQ Button - Positioned at the Bottom-Left */
 .faq-div {
-  position: fixed;
-  bottom: 20px;  /* Adjust distance from bottom */
-  left: 20px;    /* Adjust distance from left */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .faq-div button {
@@ -88,4 +104,20 @@ body, html {
 
 .faq-div button:hover {
   background-color: #0056b3;
+}
+.time-div{
+  display: flex;
+  width: 100%;
+  text-align: right;
+   
+  height: 100px;
+  justify-content: right;
+   
+  padding-right: 50px;
+  margin-bottom: 22px;
+   
+}
+.time-div {
+   
+   
 }

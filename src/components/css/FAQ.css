@@ -51,3 +51,20 @@
    
   }
   
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Back Button */
+.back-btn-div {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.back-btn-div button {
+  background-color: #ff4d4d;
+}
+
+.back-btn-div button:hover {
+  background-color: #d63030;
+}

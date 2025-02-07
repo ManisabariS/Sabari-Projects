@@ -8,7 +8,11 @@
     height: 100vh; /* Full screen height */
     width: 100%;
   }
-  
+  .heading{
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
   /* Button container */
   .btn-container-main {
     display: flex;
@@ -21,7 +25,7 @@
   
   /* Button styling */
   .btn-container-main button {
-    padding: 12px 20px;
+    padding: 10px 30px;
     border: none;
     border-radius: 8px;
     background-color: #3498db; /* Blue color */
@@ -29,11 +33,13 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 150px;
+     
   }
   
   /* Hover effect */
   .btn-container-main button:hover {
-    background-color: #2980b9;
+    background-color: #0f2d41;
     transform: scale(1.05);
   }
   

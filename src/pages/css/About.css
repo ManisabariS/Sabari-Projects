@@ -48,6 +48,13 @@
     padding: 15px;
     border-radius: 10px;
     width: 45%;
+    margin-right: 20px;
+    
+  }
+  .mission ul{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 50px;
   }
   
   .mission h2, .vision h2 {

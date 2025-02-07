@@ -6,7 +6,7 @@ function Services() {
 
   return (
     <div className="services-container">
-      <h1>Our Services</h1>
+      <h1 className="heading">Our Services</h1>
       <div className="btn-container-main">
         <button onClick={() => navigate("weather")}>Weather</button>
         <button onClick={() => navigate("bmi")}>BMI Calc</button>
@@ -14,9 +14,10 @@ function Services() {
         <button onClick={() => navigate("digitalClock")}>Clock</button>
         <button onClick={() => navigate("calender")}>Calender</button>
         <button onClick={() => navigate("password-generator")}>
-          Strong Password
+           Password
         </button>
-        <button onClick={() => navigate("faq")}>FAQ</button>
+        <button onClick={() => navigate("/faq")}>FAQ</button>
+        <button onClick={() => navigate("/quiz")}>QUIZ</button>
       </div>
     </div>
   );

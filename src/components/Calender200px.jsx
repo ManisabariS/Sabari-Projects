@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./css/Calender.css";
+import "./css/Calender200px.css";
 
 function Calender() {
   const [selected, setSelected] = useState(new Date());
@@ -72,7 +72,6 @@ function Calender() {
       setSelectedMonth(0);
       setSelectedYear(selectedYear + 1);
     } else {
-      
       setSelectedMonth(selectedMonth + 1);
     }
   };
@@ -97,7 +96,7 @@ function Calender() {
   };
 
   return (
-    <div className="page-center">
+    <div >
       <div className="calender-container">
 
         <div className="heading-div">

@@ -26,6 +26,7 @@ import Bmi from "./components/Bmi";
 import DigitalClock from "./components/DigitalClock";
 import PasswordGenerator from "./components/PasswordGenerator";
 import Calender from "./components/Calender";
+import QUIZ from "./components/QUIZ";
  
 function App() {
   const router = createBrowserRouter(
@@ -59,6 +60,7 @@ function App() {
 
         <Route path="users" element={<Users/> } loader={UsersLoader}/>
         <Route path="faq" element={<FAQ/> } />
+        <Route path="quiz" element={<QUIZ/> } />
       </Route>
     )
   );
