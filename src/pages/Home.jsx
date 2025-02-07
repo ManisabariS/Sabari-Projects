@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import TimeComponent from "../components/TimeComponent";
 import "./css/Home.css"; // Importing the custom CSS
 
+
 function Home() {
   const navigate = useNavigate();
   return (
@@ -17,7 +18,7 @@ function Home() {
             here to make your life easier with the best solutions tailored just
             for you.
           </p>
-          <button className="home-button">Explore Now</button>
+          <button className="home-button" onClick={() => navigate("/services")}>Explore Now</button>
         </div>
       </div>
       <div className="faq-div">

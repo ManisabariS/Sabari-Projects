@@ -12,9 +12,11 @@ function Services() {
         <button onClick={() => navigate("bmi")}>BMI Calc</button>
         <button onClick={() => navigate("currencyConverter")}>Converter</button>
         <button onClick={() => navigate("digitalClock")}>Clock</button>
+        <button onClick={() => navigate("calender")}>Calender</button>
         <button onClick={() => navigate("password-generator")}>
           Strong Password
         </button>
+        <button onClick={() => navigate("faq")}>FAQ</button>
       </div>
     </div>
   );

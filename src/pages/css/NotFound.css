@@ -1,37 +1,95 @@
+/* Centering and Styling the Container */
 .not-found-container {
-    text-align: center;
-    padding: 50px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 404 Large Number */
+.not-found-container h1 {
+  font-size: 6rem;
+  color: #e74c3c;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+  animation: bounce 1s infinite alternate;
+}
+
+/* Page Not Found Text */
+.not-found-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Message */
+.not-found-container p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Go Home Button */
+.go-home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1abc9c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.go-home-btn:hover {
+  background: #16a085;
+  transform: scale(1.05);
+}
+.main{
+  text-align: center;
+}
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .not-found-container {
+    padding: 40px;
+  }
   .not-found-container h1 {
-    font-size: 3rem;
-    color: #e74c3c;
+    font-size: 4rem;
   }
-  
-  .not-found-container p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 20px;
+  .not-found-container h2 {
+    font-size: 1.5rem;
   }
-  
   .go-home-btn {
-    display: inline-block;
+    font-size: 1rem;
     padding: 10px 20px;
-    background-color: #1abc9c;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
   }
-  
-  .go-home-btn:hover {
-    background-color: #16a085;
-  }
-  
+}

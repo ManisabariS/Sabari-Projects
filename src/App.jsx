@@ -25,6 +25,7 @@ import Weather from "./components/Weather";
 import Bmi from "./components/Bmi";
 import DigitalClock from "./components/DigitalClock";
 import PasswordGenerator from "./components/PasswordGenerator";
+import Calender from "./components/Calender";
  
 function App() {
   const router = createBrowserRouter(
@@ -51,6 +52,7 @@ function App() {
         <Route path="services/bmi" element={<Bmi />} />
         <Route path="services/currencyConverter" element={<CurrencyConverter />} />
         <Route path="services/digitalClock" element={<DigitalClock />} />
+        <Route path="services/calender" element={<Calender />} />
         <Route path="services/password-generator" element={<PasswordGenerator />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />

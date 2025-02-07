@@ -13,7 +13,8 @@ body, html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  background: linear-gradient(to right, #824bbc, #71a5ff);
   background-size: cover;
   background-position: center;
   color: white;
