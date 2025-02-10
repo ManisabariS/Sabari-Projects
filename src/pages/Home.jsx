@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import TimeComponent from "../components/TimeComponent";
 import "./css/Home.css"; // Importing the custom CSS
-import Calender from "../components/Calender200px";
+import Calender200px from "../components/Calender200px";
 
 
 function Home() {
@@ -28,9 +28,8 @@ function Home() {
           <button onClick={() => navigate("/faq")}>FAQ</button>
         </div>
         <div className="time-div"><div><TimeComponent /></div></div>
-        <div>
-          
-          <Calender />
+        <div >
+            {/* <Calender200px /> */}
         </div>
       </div>
     </>
