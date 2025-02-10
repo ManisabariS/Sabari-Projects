@@ -166,6 +166,7 @@ function QUIZ() {
         <div className="time-left">
           <h2>
             Time left: <span>10s</span>
+            
           </h2>
         </div>
       </div>
