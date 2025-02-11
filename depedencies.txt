@@ -1,5 +1,7 @@
 npm install axios qrcode qrcode.react react react-dom react-router-dom
+npm install @mui/material @emotion/react @emotion/styled
 
+npm install @mui/icons-material
 
                         or
 

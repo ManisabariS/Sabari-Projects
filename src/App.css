@@ -13,6 +13,10 @@
   z-index: 1000; /* Ensures the navbar stays above other content */
   
 }
+body {
+  overflow-y: auto !important; /* Enable vertical scrolling */
+  min-height: 100vh; /* Ensure full height */
+}
 
 .nav-bar ul {
   display: flex;
