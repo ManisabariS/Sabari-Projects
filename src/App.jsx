@@ -27,6 +27,8 @@ import DigitalClock from "./components/DigitalClock";
 import PasswordGenerator from "./components/PasswordGenerator";
 import Calender from "./components/Calender";
 import QUIZ from "./components/QUIZ";
+import Todos from "./components/Todos";
+import Counter from "./components/Counter";
  
 function App() {
   const router = createBrowserRouter(
@@ -54,6 +56,7 @@ function App() {
         <Route path="services/currencyConverter" element={<CurrencyConverter />} />
         <Route path="services/digitalClock" element={<DigitalClock />} />
         <Route path="services/calender" element={<Calender />} />
+        <Route path="todos" element={<Todos />} />
         <Route path="services/password-generator" element={<PasswordGenerator />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
@@ -61,6 +64,7 @@ function App() {
         <Route path="users" element={<Users/> } loader={UsersLoader}/>
         <Route path="faq" element={<FAQ/> } />
         <Route path="quiz" element={<QUIZ/> } />
+        <Route path="counter" element={<Counter/> } />
       </Route>
     )
   );

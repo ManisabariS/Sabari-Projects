@@ -18,6 +18,8 @@ function Services() {
         </button>
         <button onClick={() => navigate("/faq")}>FAQ</button>
         <button onClick={() => navigate("/quiz")}>QUIZ</button>
+        <button onClick={() => navigate("/todos")}>Todo List</button>
+        <button onClick={() => navigate("/counter")}>Counter</button>
       </div>
     </div>
   );
